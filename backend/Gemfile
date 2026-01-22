@@ -12,7 +12,11 @@ gem "puma", "~> 6.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 5.0"
+gem "redis", "~> 5.0"
+
+# Use Sidekiq for background job processing
+gem "sidekiq"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -27,6 +31,9 @@ gem "rack-cors"
 
 # Use dotenv for environment variables
 gem "dotenv-rails"
+
+# Use whenever for cron job scheduling
+gem "whenever", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

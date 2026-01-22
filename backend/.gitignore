@@ -1,0 +1,51 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# API keys and secrets
+config/secrets.yml
+config/master.key
+config/credentials.yml.enc
+
+# Rails
+*.rbc
+capybara-*.html
+.log
+/tmp/
+/db/*.sqlite3
+/db/*.sqlite3-*
+/public/system/
+/coverage/
+/spec/tmp/
+**/aruba-*
+.rvmrc
+/.bundle
+/vendor/bundle/
+*.orig
+.bundle-*
+.ruby-gemset
+.ruby-version
+
+# Spring
+.cache/
+.spring/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

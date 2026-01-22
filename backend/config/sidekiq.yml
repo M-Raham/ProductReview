@@ -1,0 +1,18 @@
+# Sidekiq configuration file
+# More info at https://github.com/sidekiq/sidekiq/wiki/Advanced-Options
+
+:concurrency: 5
+:pidfile: ./tmp/pids/sidekiq.pid
+:logfile: ./log/sidekiq.log
+:queues:
+  - default
+  - mailers
+
+development:
+  :concurrency: 2
+
+test:
+  :concurrency: 1
+
+production:
+  :concurrency: 10
