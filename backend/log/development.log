@@ -1,0 +1,2496 @@
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/products" for ::1 at 2026-01-22 00:56:50 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 00:56:50 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 00:57:04 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 00:57:04 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2026-01-22 01:01:07 -0800
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: postgres.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:65:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2026-01-22 01:01:11 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:04 -0800
+  
+ActiveRecord::ConnectionNotEstablished (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:04 -0800
+  
+ActiveRecord::NoDatabaseError (We could not find your database: backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  database "backend_development" does not exist
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:08 -0800
+  
+ActiveRecord::NoDatabaseError (We could not find your database: backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  database "backend_development" does not exist
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:08 -0800
+  
+ActiveRecord::NoDatabaseError (We could not find your database: backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  database "backend_development" does not exist
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:18 -0800
+  
+ActiveRecord::NoDatabaseError (We could not find your database: backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  database "backend_development" does not exist
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:02:18 -0800
+  
+ActiveRecord::NoDatabaseError (We could not find your database: backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: FATAL:  database "backend_development" does not exist
+)
+  
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:987:in `connect'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:999:in `reconnect'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:676:in `block in reconnect!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:675:in `reconnect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:780:in `block in verify!'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `verify!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `connect!'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:994:in `block in with_raw_connection'
+activesupport (7.2.3) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract_adapter.rb:993:in `with_raw_connection'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1099:in `quoted_scope'
+activerecord (7.2.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1076:in `data_source_sql'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `with_connection'
+activerecord (7.2.3) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.3) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.3) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.3) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.3) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.3) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.3) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.3) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.3) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.3) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (6.6.1) lib/puma/configuration.rb:279:in `call'
+puma (6.6.1) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.1) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.1) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.1) lib/puma/server.rb:472:in `process_client'
+puma (6.6.1) lib/puma/server.rb:254:in `block in run'
+puma (6.6.1) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (821.3ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (24.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-01-22 09:03:48.066491', '2026-01-22 09:03:48.066497') RETURNING "key"[0m
+Migrating to CreateProducts (20240121000001)
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying NOT NULL, "description" text NOT NULL, "category" character varying, "price" decimal(10,2), "brand" character varying, "specifications" jsonb DEFAULT '{}', "image_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240121000001') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20240121000002)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "product_id" bigint NOT NULL, "content" text NOT NULL, "compared_products" jsonb DEFAULT '[]', "rating" integer, "generation_status" character varying DEFAULT 'completed', "error_message" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_bedd9094d4"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_product_id" ON "reviews" ("product_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240121000002') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:05:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (163.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 556ms (Views: -10.4ms | ActiveRecord: 196.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:05:56 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:05:59 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:05:59 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:06:04 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:06:04 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:06:06 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:06:06 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/products" for ::1 at 2026-01-22 01:07:37 -0800
+Processing by Api::V1::ProductsController#create as */*
+  Parameters: {"name"=>"Shoes", "description"=>"This is a nice pair od shoes", "category"=>"Sports", "price"=>"100", "brand"=>"bata", "specifications"=>{"01"=>""}, "image_url"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6r2H66Jdu4G04GlHW6rs81Y1mZQ0WFo_YA&s", "product"=>{"name"=>"Shoes", "description"=>"This is a nice pair od shoes", "category"=>"Sports", "price"=>"100", "brand"=>"bata", "specifications"=>{"01"=>""}, "image_url"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6r2H66Jdu4G04GlHW6rs81Y1mZQ0WFo_YA&s"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/products_controller.rb:19:in `create'
+  [1m[36mProduct Create (8.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "category", "price", "brand", "specifications", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shoes"], ["description", "This is a nice pair od shoes"], ["category", "Sports"], ["price", "100.0"], ["brand", "bata"], ["specifications", "{\"01\":\"\"}"], ["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6r2H66Jdu4G04GlHW6rs81Y1mZQ0WFo_YA&s"], ["created_at", "2026-01-22 09:07:37.243227"], ["updated_at", "2026-01-22 09:07:37.243227"]]
+  ↳ app/controllers/api/v1/products_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/products_controller.rb:19:in `create'
+Completed 201 Created in 47ms (Views: 0.9ms | ActiveRecord: 37.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:07:40 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/reviews/generate"):
+  
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:04 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:04 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:08 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:08 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:27 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:08:27 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:09:11 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:09:11 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:09:20 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (3.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 344ms (Views: 273.6ms | ActiveRecord: 9.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:09:20 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:09:20 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:31:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:09:20 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:31:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:09:24 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/reviews/generate"):
+  
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:09:31 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:09:31 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:09:34 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:09:34 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:09:34 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (4.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 17ms (Views: 6.9ms | ActiveRecord: 5.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:31:in `set_product'
+  [1m[36mReview Load (2.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 143ms (Views: 9.5ms | ActiveRecord: 18.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:09:34 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:31:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 12.3ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:09:39 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/reviews/generate"):
+  
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mOPENAI_API_KEY[0m, [36mOPENAI_MODEL[0m, [36mPOSTGRES_DB[0m, [36mPOSTGRES_PASSWORD[0m, [36mPOSTGRES_USER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mProduct Count (8.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:29 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 441ms (Views: 159.3ms | ActiveRecord: 163.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:30 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:30 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:30 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:14:33 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:67:in `build_prompt'
+Completed 422 Unprocessable Content in 95ms (ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Content can't be blank):
+
+Causes:
+ArgumentError (unknown keyword: :access_token)
+  
+app/services/review_generator_service.rb:39:in `rescue in call'
+app/services/review_generator_service.rb:6:in `call'
+app/controllers/api/v1/reviews_controller.rb:14:in `generate'
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:37 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:37 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:37 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 2.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:37 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:41 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:41 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:45 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:45 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:47 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:47 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:51 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:14:51 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:57 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:14:58 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:58 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 6.2ms | ActiveRecord: 2.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 187ms (Views: 8.8ms | ActiveRecord: 18.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:14:58 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:15:01 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:67:in `build_prompt'
+Completed 422 Unprocessable Content in 13ms (ActiveRecord: 1.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Content can't be blank):
+
+Causes:
+ArgumentError (unknown keyword: :access_token)
+  
+app/services/review_generator_service.rb:39:in `rescue in call'
+app/services/review_generator_service.rb:6:in `call'
+app/controllers/api/v1/reviews_controller.rb:14:in `generate'
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:16:20 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 64ms (Views: 14.4ms | ActiveRecord: 29.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:16:21 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:16:21 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:16:21 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:16:23 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:78:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mReview Create (9.8ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: unknown keyword: :access_token"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "unknown keyword: :access_token"], ["created_at", "2026-01-22 09:16:23.715775"], ["updated_at", "2026-01-22 09:16:23.715775"]]
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+Completed 422 Unprocessable Content in 45ms (Views: 0.2ms | ActiveRecord: 11.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:26 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 64ms (Views: 26.8ms | ActiveRecord: 13.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:26 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:26 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 24ms (Views: 9.2ms | ActiveRecord: 10.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mProduct Load (7.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 5.9ms | ActiveRecord: 7.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:27 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:38 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 7.3ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:38 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:38 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 2.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 66ms (Views: 47.6ms | ActiveRecord: 1.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:38 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (4.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 220ms (Views: 198.4ms | ActiveRecord: 5.3ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started DELETE "/api/v1/reviews/1" for ::1 at 2026-01-22 01:17:41 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (11.6ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 54ms (ActiveRecord: 12.7ms (2 queries, 0 cached) | GC: 990.3ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:45 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 6.4ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:45 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:17:45 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 1.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:17:45 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:17:48 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:78:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mReview Create (5.9ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: wrong number of arguments (given 1, expected 0)"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "wrong number of arguments (given 1, expected 0)"], ["created_at", "2026-01-22 09:17:48.438020"], ["updated_at", "2026-01-22 09:17:48.438020"]]
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+Completed 422 Unprocessable Content in 55ms (Views: 0.2ms | ActiveRecord: 7.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:19:42 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 52ms (Views: 19.8ms | ActiveRecord: 12.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:19:42 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:19:42 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:19:42 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:19:45 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:78:in `build_prompt'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mReview Create (8.5ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: undefined method `new' for OpenAI:Module"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "undefined method `new' for OpenAI:Module"], ["created_at", "2026-01-22 09:19:45.713597"], ["updated_at", "2026-01-22 09:19:45.713597"]]
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+Completed 422 Unprocessable Content in 33ms (Views: 0.3ms | ActiveRecord: 10.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:21:20 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 59ms (Views: 21.5ms | ActiveRecord: 13.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:21:20 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:21:20 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 3.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mProduct Load (8.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 32ms (Views: 11.4ms | ActiveRecord: 9.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:21:21 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:21:24 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:80:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:52:in `rescue in call'
+  [1m[36mReview Create (6.4ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: wrong number of arguments (given 1, expected 0)"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "wrong number of arguments (given 1, expected 0)"], ["created_at", "2026-01-22 09:21:24.389832"], ["updated_at", "2026-01-22 09:21:24.389832"]]
+  ↳ app/services/review_generator_service.rb:52:in `rescue in call'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:52:in `rescue in call'
+Completed 422 Unprocessable Content in 58ms (Views: 0.2ms | ActiveRecord: 9.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:22:41 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 56ms (Views: 23.1ms | ActiveRecord: 12.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:22:41 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:22:41 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:22:41 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:22:47 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:78:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mReview Create (7.1ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: wrong number of arguments (given 1, expected 0)"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "wrong number of arguments (given 1, expected 0)"], ["created_at", "2026-01-22 09:22:47.863704"], ["updated_at", "2026-01-22 09:22:47.863704"]]
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:50:in `rescue in call'
+Completed 422 Unprocessable Content in 51ms (Views: 0.2ms | ActiveRecord: 9.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:21 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 78ms (Views: 45.7ms | ActiveRecord: 13.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:21 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:21 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:21 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:23:25 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:76:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+  [1m[36mReview Create (5.6ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: wrong number of arguments (given 1, expected 0)"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "wrong number of arguments (given 1, expected 0)"], ["created_at", "2026-01-22 09:23:25.420245"], ["updated_at", "2026-01-22 09:23:25.420245"]]
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+Completed 422 Unprocessable Content in 55ms (Views: 0.2ms | ActiveRecord: 7.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:28 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:28 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:28 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 67ms (Views: 20.3ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:29 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/2" for ::1 at 2026-01-22 01:23:32 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (4.8ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 6.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:23:34 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2026-01-22 01:23:34 -0800
+Processing by Api::V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/v1/products_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:38 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:38 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:38 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:38 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/6" for ::1 at 2026-01-22 01:23:41 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (6.9ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 25ms (ActiveRecord: 13.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:43 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 24ms (Views: 17.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:43 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:43 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:44 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 7.1ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/5" for ::1 at 2026-01-22 01:23:45 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (7.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 22ms (ActiveRecord: 8.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:47 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 22ms (Views: 14.1ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:47 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:47 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:48 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/4" for ::1 at 2026-01-22 01:23:49 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (4.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 5.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:51 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:51 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:51 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:52 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/3" for ::1 at 2026-01-22 01:23:53 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (6.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 8.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:56 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:23:56 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:56 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:23:56 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 91ms (Views: 26.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:24:00 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:76:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+  [1m[36mReview Create (7.5ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: wrong number of arguments (given 1, expected 0)"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "wrong number of arguments (given 1, expected 0)"], ["created_at", "2026-01-22 09:24:00.362599"], ["updated_at", "2026-01-22 09:24:00.362599"]]
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:48:in `rescue in call'
+Completed 422 Unprocessable Content in 57ms (Views: 0.2ms | ActiveRecord: 9.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:24:45 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 106ms (Views: 68.3ms | ActiveRecord: 13.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:24:46 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:24:46 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:24:46 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/7" for ::1 at 2026-01-22 01:24:53 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (6.1ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 7.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:24:56 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 13ms (Views: 6.3ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:24:56 -0800
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:24:56 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:24:56 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:24:58 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:77:in `build_prompt'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:49:in `rescue in call'
+  [1m[36mReview Create (5.0ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: undefined method `chat' for OpenAI:Module"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "undefined method `chat' for OpenAI:Module"], ["created_at", "2026-01-22 09:24:58.474248"], ["updated_at", "2026-01-22 09:24:58.474248"]]
+  ↳ app/services/review_generator_service.rb:49:in `rescue in call'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:49:in `rescue in call'
+Completed 422 Unprocessable Content in 25ms (Views: 0.2ms | ActiveRecord: 6.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:27:01 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 59ms (Views: 23.0ms | ActiveRecord: 14.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:27:02 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:27:02 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:27:02 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/api/v1/reviews/8" for ::1 at 2026-01-22 01:27:04 -0800
+Processing by Api::V1::ReviewsController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:49:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mReview Destroy (4.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:36:in `destroy'
+Completed 204 No Content in 15ms (ActiveRecord: 5.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:27:07 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:27:07 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:27:07 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 245ms (Views: 218.6ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:27:08 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/reviews/generate" for ::1 at 2026-01-22 01:27:09 -0800
+Processing by Api::V1::ReviewsController#generate as */*
+  Parameters: {"product_id"=>1, "review"=>{"product_id"=>1}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."category" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["category", "Sports"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/services/review_generator_service.rb:74:in `build_prompt'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/review_generator_service.rb:46:in `rescue in call'
+  [1m[36mReview Create (5.8ms)[0m  [1m[32mINSERT INTO "reviews" ("product_id", "content", "compared_products", "rating", "generation_status", "error_message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["product_id", 1], ["content", "Review generation failed. Error: {:url=>\"https://api.openai.com/v1/responses\", :status=>429, :body=>{:error=>{:message=>\"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\", :type=>\"insufficient_quota\", :param=>nil, :code=>\"insufficient_quota\"}}}"], ["compared_products", "[]"], ["rating", nil], ["generation_status", "failed"], ["error_message", "{:url=>\"https://api.openai.com/v1/responses\", :status=>429, :body=>{:error=>{:message=>\"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\", :type=>\"insufficient_quota\", :param=>nil, :code=>\"insufficient_quota\"}}}"], ["created_at", "2026-01-22 09:27:29.478574"], ["updated_at", "2026-01-22 09:27:29.478574"]]
+  ↳ app/services/review_generator_service.rb:46:in `rescue in call'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/review_generator_service.rb:46:in `rescue in call'
+Completed 422 Unprocessable Content in 19886ms (Views: 0.2ms | ActiveRecord: 12.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:28:24 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1" for ::1 at 2026-01-22 01:28:24 -0800
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:28:24 -0800
+Processing by Api::V1::ProductsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/products_controller.rb:12:in `show'
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/products/1/reviews" for ::1 at 2026-01-22 01:28:25 -0800
+Processing by Api::V1::ReviewsController#index as */*
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:44:in `set_product'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:8:in `index'
+Completed 200 OK in 81ms (Views: 8.2ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
