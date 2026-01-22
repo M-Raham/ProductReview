@@ -134,7 +134,7 @@ export default function CreateProductPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export default function CreateProductPage() {
                   value={formData.brand}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                 />
               </div>
 
@@ -163,7 +163,7 @@ export default function CreateProductPage() {
                   value={formData.category}
                   onChange={handleSelectChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                 >
                   <option value="">Select a category</option>
                   <option value="Electronics">Electronics</option>
@@ -187,7 +187,7 @@ export default function CreateProductPage() {
                   onChange={handleChange}
                   required
                   placeholder="99.99"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                 />
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function CreateProductPage() {
                 onChange={handleTextAreaChange}
                 required
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
               />
             </div>
 
@@ -218,7 +218,7 @@ export default function CreateProductPage() {
                 value={formData.image_url}
                 onChange={handleChange}
                 placeholder="https://example.com/image.jpg"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
               />
             </div>
           </div>
@@ -249,7 +249,7 @@ export default function CreateProductPage() {
                       type="text"
                       value={String(value)}
                       onChange={(e) => handleSpecificationChange(key, e.target.value)}
-                      className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                     />
                     <button
                       type="button"
