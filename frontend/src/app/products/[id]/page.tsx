@@ -2,18 +2,21 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
 import ReviewDisplay from '@/components/ReviewDisplay';
 import LoadingSpinner from '@/components/LoadingSpinner';
-import { fetchProduct, fetchReviews, generateReview, deleteReview } from '@/lib/api';
+import { fetchProduct, fetchArticles, generateArticle, deleteArticle, updateProduct, deleteProduct } from '@/lib/api';
 import { Product, Review } from '@/types';
+import ReactMarkdown from 'react-markdown';
+import { cleanMarkdown } from '@/utils/markdown';
 
 export default function ProductDetailPage() {
   const [product, setProduct] = useState<Product | null>(null);
-  const [reviews, setReviews] = useState<Review[]>([]);
+  const [articles, setArticles] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [generatingReview, setGeneratingReview] = useState(false);
+  const [generatingArticle, setGeneratingArticle] = useState(false);
   const params = useParams();
   const router = useRouter();
   const productId = parseInt(params.id as string);
@@ -24,8 +27,8 @@ export default function ProductDetailPage() {
         const productData = await fetchProduct(productId);
         setProduct(productData);
         
-        const reviewsData = await fetchReviews(productId);
-        setReviews(reviewsData);
+        const articlesData = await fetchArticles(productId);
+        setArticles(articlesData);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load product');
       } finally {
@@ -36,26 +39,41 @@ export default function ProductDetailPage() {
     loadProduct();
   }, [productId]);
 
-  const handleGenerateReview = async () => {
+  const handleGenerateArticle = async () => {
     if (!product) return;
     
-    setGeneratingReview(true);
+    setGeneratingArticle(true);
     try {
-      const newReview = await generateReview(product.id);
-      setReviews([newReview, ...reviews]);
+      const newArticle = await generateArticle(product.id);
+      setArticles([newArticle, ...articles]);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to generate review');
+      setError(err instanceof Error ? err.message : 'Failed to generate article');
     } finally {
-      setGeneratingReview(false);
+      setGeneratingArticle(false);
     }
   };
 
-  const handleDeleteReview = async (reviewId: number) => {
+  const handleDeleteArticle = async (articleId: number) => {
     try {
-      await deleteReview(reviewId);
-      setReviews(reviews.filter((review: Review) => review.id !== reviewId));
+      await deleteArticle(articleId);
+      setArticles(articles.filter((article: Review) => article.id !== articleId));
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to delete review');
+      setError(err instanceof Error ? err.message : 'Failed to delete article');
+    }
+  };
+
+  const handleEditProduct = () => {
+    router.push(`/products/${productId}/edit`);
+  };
+
+  const handleDeleteProduct = async () => {
+    if (window.confirm('Are you sure you want to delete this product? This will also delete all associated articles.')) {
+      try {
+        await deleteProduct(productId);
+        router.push('/');
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to delete product');
+      }
     }
   };
 
@@ -91,8 +109,26 @@ export default function ProductDetailPage() {
               />
             </div>
             <div className="md:w-2/3 p-6">
-              <h1 className="text-2xl font-bold text-gray-900 mb-2">{product.name}</h1>
-              <p className="text-lg text-gray-600 mb-4">{product.brand}</p>
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h1 className="text-2xl font-bold text-gray-900 mb-2">{product.name}</h1>
+                  <p className="text-lg text-gray-600">{product.brand}</p>
+                </div>
+                <div className="flex gap-2">
+                  <button
+                    onClick={handleEditProduct}
+                    className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors duration-200"
+                  >
+                    Edit Product
+                  </button>
+                  <button
+                    onClick={handleDeleteProduct}
+                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors duration-200"
+                  >
+                    Delete Product
+                  </button>
+                </div>
+              </div>
               <p className="text-gray-700 mb-4">{product.description}</p>
               <div className="flex items-center mb-4">
                 <span className="text-2xl font-bold text-green-600">${product.price}</span>
@@ -116,31 +152,75 @@ export default function ProductDetailPage() {
           </div>
         </div>
 
-        {/* Reviews Section */}
+        {/* Articles Section */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">Reviews</h2>
-            <button
-              onClick={handleGenerateReview}
-              disabled={generatingReview}
-              className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 disabled:bg-gray-400 transition-colors duration-200"
-            >
-              {generatingReview ? 'Generating...' : 'Generate AI Review'}
-            </button>
+            <h2 className="text-2xl font-bold text-gray-900">Articles</h2>
+            <div className="space-x-3">
+              <button
+                onClick={handleGenerateArticle}
+                disabled={generatingArticle}
+                className="bg-purple-500 text-white px-6 py-2 rounded-md hover:bg-purple-600 disabled:bg-gray-400 transition-colors duration-200"
+              >
+                {generatingArticle ? 'Generating...' : 'Generate AI Article'}
+              </button>
+              <Link
+                href="/articles"
+                className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors duration-200"
+              >
+                View All Articles
+              </Link>
+            </div>
           </div>
 
-          {reviews.length === 0 ? (
+          {articles.length === 0 ? (
             <p className="text-gray-500 text-center py-8">
-              No reviews yet. Generate an AI-powered review to get started!
+              No articles yet. Generate an in-depth AI article to get started!
             </p>
           ) : (
-            <div>
-              {reviews.map((review) => (
-                <ReviewDisplay
-                  key={review.id}
-                  review={review}
-                  onDelete={handleDeleteReview}
-                />
+            <div className="space-y-4">
+              {articles.map((article) => (
+                <div key={article.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      <Link 
+                        href={`/articles/${article.id}`}
+                        className="hover:text-purple-600 transition-colors duration-200"
+                      >
+                        Article for {product?.name}
+                      </Link>
+                    </h3>
+                    <span className="text-sm text-gray-500">
+                      {new Date(article.created_at).toLocaleDateString()}
+                    </span>
+                  </div>
+                  <div className="prose max-w-none mb-3">
+                    <div className="text-black">
+                      <ReactMarkdown
+                        components={{
+                          p: ({children}) => <p className="text-black inline">{children}</p>,
+                          strong: ({children}) => <strong className="font-bold text-black">{children}</strong>,
+                        }}
+                      >
+                        {cleanMarkdown(article.content.length > 200 ? article.content.substring(0, 200) + '...' : article.content)}
+                      </ReactMarkdown>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <Link
+                      href={`/articles/${article.id}`}
+                      className="text-purple-600 hover:text-purple-800 font-medium text-sm"
+                    >
+                      Read Full Article →
+                    </Link>
+                    <button
+                      onClick={() => handleDeleteArticle(article.id)}
+                      className="text-red-600 hover:text-red-800 text-sm"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
               ))}
             </div>
           )}

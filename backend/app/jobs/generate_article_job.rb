@@ -1,4 +1,4 @@
-class GenerateReviewJob < ApplicationJob
+class GenerateArticleJob < ApplicationJob
   queue_as :default
 
   def perform(product_id)
@@ -7,9 +7,9 @@ class GenerateReviewJob < ApplicationJob
     result = ReviewGeneratorService.new(product).call
     
     if result[:success]
-      Rails.logger.info "Successfully generated review for Product ##{product_id}: #{result[:review].id}"
+      Rails.logger.info "Successfully generated article for Product ##{product_id}: #{result[:review].id}"
     else
-      Rails.logger.error "Failed to generate review for Product ##{product_id}: #{result[:error]}"
+      Rails.logger.error "Failed to generate article for Product ##{product_id}: #{result[:error]}"
     end
     
     result
@@ -17,7 +17,7 @@ class GenerateReviewJob < ApplicationJob
     Rails.logger.error "Product ##{product_id} not found: #{e.message}"
     { success: false, error: "Product not found" }
   rescue => e
-    Rails.logger.error "Unexpected error in GenerateReviewJob for Product ##{product_id}: #{e.message}"
+    Rails.logger.error "Unexpected error in GenerateArticleJob for Product ##{product_id}: #{e.message}"
     { success: false, error: e.message }
   end
 end

@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
 import LoadingSpinner from '@/components/LoadingSpinner';
-import { fetchProducts } from '@/lib/api';
+import { fetchProducts, deleteProduct } from '@/lib/api';
 import { Product } from '@/types';
 
-export default function Home() {
+export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -16,7 +16,7 @@ export default function Home() {
     const loadProducts = async () => {
       try {
         const data = await fetchProducts();
-        setProducts(data.slice(0, 6)); // Show only 6 featured products
+        setProducts(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load products');
       } finally {
@@ -26,6 +26,22 @@ export default function Home() {
 
     loadProducts();
   }, []);
+
+  const handleEdit = (product: Product) => {
+    // Navigate to edit page - we'll create this next
+    window.location.href = `/products/${product.id}/edit`;
+  };
+
+  const handleDelete = async (id: number) => {
+    if (window.confirm('Are you sure you want to delete this product?')) {
+      try {
+        await deleteProduct(id);
+        setProducts(products.filter(p => p.id !== id));
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to delete product');
+      }
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -47,8 +63,14 @@ export default function Home() {
                 Browse Products
               </Link>
               <Link
-                href="/products/new"
+                href="/articles"
                 className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              >
+                Read Articles
+              </Link>
+              <Link
+                href="/products/new"
+                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
               >
                 Add Product
               </Link>
@@ -77,7 +99,12 @@ export default function Home() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <ProductCard 
+                  key={product.id} 
+                  product={product} 
+                  onEdit={handleEdit}
+                  onDelete={handleDelete}
+                />
               ))}
             </div>
           )}

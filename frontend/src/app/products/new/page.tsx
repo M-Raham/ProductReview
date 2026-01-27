@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { createProduct, generateReview } from '@/lib/api';
+import { createProduct, generateArticle } from '@/lib/api';
 import { CreateProductData } from '@/types';
 
 export default function CreateProductPage() {
@@ -82,7 +82,7 @@ export default function CreateProductPage() {
       // Optional: Generate AI review after creating product
       const generateAiReview = window.confirm('Would you like to generate an AI review for this product?');
       if (generateAiReview) {
-        await generateReview(product.id);
+        await generateArticle(product.id);
       }
       
       setTimeout(() => {

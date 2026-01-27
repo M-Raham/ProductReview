@@ -1,20 +1,20 @@
-class Api::V1::ReviewsController < ApplicationController
+class Api::V1::ArticlesController < ApplicationController
   before_action :set_product, only: [:index, :generate]
-  before_action :set_review, only: [:destroy]
+  before_action :set_article, only: [:destroy]
 
-  # GET /api/v1/products/:product_id/reviews
+  # GET /api/v1/products/:product_id/articles
   def index
-    @reviews = @product.reviews
-    render json: @reviews
+    @articles = @product.reviews
+    render json: @articles
   end
 
-  # POST /api/v1/products/:product_id/reviews/generate
+  # POST /api/v1/products/:product_id/articles/generate
   def generate
     if @product
       result = ReviewGeneratorService.new(@product).call
     else
       # Handle case when called without product_id
-      product_id = params[:product_id] || params.dig(:review, :product_id)
+      product_id = params[:product_id] || params.dig(:article, :product_id)
       if product_id
         product = Product.find(product_id)
         result = ReviewGeneratorService.new(product).call
@@ -31,10 +31,10 @@ class Api::V1::ReviewsController < ApplicationController
     end
   end
 
-  # DELETE /api/v1/reviews/:id
+  # DELETE /api/v1/articles/:id
   def destroy
-    @review.destroy
-    head :no_content
+    @article.destroy
+    render json: { message: 'Article deleted successfully' }
   end
 
   private
@@ -45,7 +45,7 @@ class Api::V1::ReviewsController < ApplicationController
     end
   end
 
-  def set_review
-    @review = Review.find(params[:id])
+  def set_article
+    @article = Review.find(params[:id])
   end
 end

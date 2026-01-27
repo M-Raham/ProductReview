@@ -12,12 +12,12 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :products, only: [:index, :show, :create, :update, :destroy] do
-        resources :reviews, only: [:index] do
+        resources :articles, only: [:index] do
           post :generate, on: :collection
         end
       end
       
-      resources :reviews, only: [:destroy] do
+      resources :articles, only: [:destroy] do
         post :generate, on: :collection
       end
     end

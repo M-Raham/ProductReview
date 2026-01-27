@@ -7,7 +7,7 @@ class ReviewGeneratorService
     begin
       similar_products = @product.similar_products(3)
       
-      prompt = build_prompt(similar_products)
+      prompt = build_article_prompt(similar_products)
       
       response = call_groq_api(prompt)
       
@@ -65,7 +65,7 @@ class ReviewGeneratorService
     req.body = {
       model: "llama-3.1-8b-instant",
       messages: [
-        { role: "system", content: "Generate professional product reviews." },
+        { role: "system", content: "Generate professional SEO-optimized product articles with comprehensive analysis and proper HTML structure." },
         { role: "user", content: prompt }
       ]
     }.to_json
@@ -84,8 +84,8 @@ class ReviewGeneratorService
     raise "HTTP error calling Groq API: #{e.message}"
   end
 
-  def build_prompt(similar_products)
-    prompt = "Please write a professional product review for the following product:\n\n"
+  def build_article_prompt(similar_products)
+    prompt = "Please write a comprehensive SEO-optimized article for the following product:\n\n"
     prompt += "Product Details:\n"
     prompt += "- Name: #{@product.name}\n"
     prompt += "- Brand: #{@product.brand}\n" if @product.brand.present?
@@ -107,24 +107,27 @@ class ReviewGeneratorService
       end
     end
     
-    prompt += "\n\nPlease write a concise 50-word SEO-friendly product review that:\n"
-    prompt += "1. Is optimized for search engines with relevant keywords naturally integrated\n"
-    prompt += "2. Includes the product name, brand, and category keywords throughout the review\n"
-    prompt += "3. Incorporates comparison keywords when mentioning similar products\n"
-    prompt += "4. Uses long-tail keywords related to product features and use cases\n"
-    prompt += "5. Provides an honest assessment of product's features and performance\n"
-    prompt += "6. Compares it with similar products using SEO-friendly comparison language\n"
-    prompt += "7. Discusses pros and cons with keyword-rich descriptions\n"
-    prompt += "8. Gives specific examples and details with relevant search terms\n"
-    prompt += "9. Concludes with an overall rating from 1-5 stars (please include this at the end)\n\n"
-    prompt += "SEO Guidelines:\n"
-    prompt += "- Keep it concise at exactly 50 words\n"
-    prompt += "- Use the product name naturally 1-2 times\n"
+    prompt += "\n\nPlease generate a comprehensive article that includes:\n"
+    prompt += "1. An engaging, SEO-friendly title\n"
+    prompt += "2. Well-structured content with proper headings (H1, H2, H3)\n"
+    prompt += "3. In-depth product analysis and review\n"
+    prompt += "4. Comparison with similar products\n"
+    prompt += "5. Pros and cons section\n"
+    prompt += "6. Buying guide and recommendations\n"
+    prompt += "7. FAQ section\n"
+    prompt += "8. Conclusion with final verdict\n\n"
+    
+    prompt += "SEO Requirements:\n"
+    prompt += "- Use the product name naturally throughout the article\n"
     prompt += "- Include brand and category keywords\n"
-    prompt += "- Add comparison terms like 'alternative', 'vs', 'compared to'\n"
-    prompt += "- Use feature-specific keywords that users would search for\n"
-    prompt += "- Include benefit-oriented keywords\n"
-    prompt += "Please format as 'Rating: X/5 stars' at the very end."
+    prompt += "- Use long-tail keywords related to product features\n"
+    prompt += "- Include comparison keywords\n"
+    prompt += "- Write in a conversational yet professional tone\n"
+    prompt += "- Aim for 800-1200 words\n"
+    prompt += "- Use proper HTML formatting with appropriate tags\n\n"
+    
+    prompt += "Please format the article with proper HTML structure including headings, paragraphs, lists, etc."
+    prompt += "Make it comprehensive and valuable for readers considering this product."
     
     prompt
   end
